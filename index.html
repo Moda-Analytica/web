@@ -43,12 +43,12 @@
     ================================================== -->
     <header class="s-header">
       <div class="header-logo">
-        <a class="site-logo" href="/">
+        <a class="site-logo" href="#hero">
           <img src="images/logo.png" alt="Homepage" />
         </a>
       </div>
 
-      <nav class="header-nav">
+      <nav class="header-nav sample">
         <a href="#0" class="header-nav__close" title="close"
           ><span>Close</span></a
         >
@@ -117,7 +117,7 @@
       </a>
     </header>
     <!-- end s-header -->
-    <section class="hero-equal-height pt-165 pb-100 overflow-hidden">
+    <section class="hero-equal-height pt-165 pb-100 overflow-hidden" id="hero">
       <div class="hero-shape"></div>
       <div class="container">
         <div class="row align-items-center">
@@ -287,7 +287,7 @@
 
       <!-- end section-header -->
       <div class="service-list-wrapper">
-        <div class="service-list">
+        <div class="service-list" id="faqlist">
           <div
             class="col-block service-item"
             data-aos="fade-up"
@@ -302,6 +302,7 @@
                     type="button"
                     data-bs-toggle="collapse"
                     data-bs-target="#content-accordion-1"
+                    aria-expanded="false"
                   >
                     <img src="img/down-arrow.svg" />
                   </button>
@@ -311,7 +312,13 @@
                   class="accordion-collapse collapse"
                   data-bs-parent="#faqlist"
                 >
-                  <div class="accordion-body">
+                  <div
+                    class="accordion-body"
+                    id="content-accordion-1"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#faqlist"
+                    aria-expanded="true"
+                  >
                     <ul>
                       <li>Recommendation Engine</li>
                       <li>Predicting Churn</li>
@@ -623,7 +630,7 @@
             <div class="single-blog-card card bg-transparent">
               <div class="image" data-aos="zoom-in" data-aos-duration="1500">
                 <img
-                  src="img/about-2.jpg"
+                  src="img/twitterbot.jpg"
                   class="card-img-top position-relative"
                   alt="blog"
                 />
@@ -631,20 +638,21 @@
 
               <div class="card-body">
                 <h2 class="h5 mb-2 card-title">
-                  <a href="#">THE UK GOVERNMENT</a>
+                  <a href="#">Internal Project</a>
                 </h2>
 
                 <h2 class="card-text-intro">
-                  Lorem ipsum dolor sit amet, consectetur
+                  Twitter bot for marketing
                 </h2>
                 <p class="card-text">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Using twitter's public api to extract top conversations
+                  around a specified topic and automatically reply the thread
+                  with the a web link to redirect traffic from twitter.
                 </p>
                 <div class="tags">
                   <p class="list-inline-item"></p>
-                  <p>Data analytics,Citizen Registration,</p>
-                  <p>Registration,Mchine larning,Technology,</p>
+                  <p>Data analytics, Automation,</p>
+                  <p>Marketing, Open-source, Web traffic,</p>
                 </div>
               </div>
             </div>
@@ -659,7 +667,7 @@
             <div class="single-blog-card card bg-transparent">
               <div class="image" data-aos="zoom-in" data-aos-duration="1500">
                 <img
-                  src="img/about-2.jpg"
+                  src="img/moneylaundering.jpg"
                   class="card-img-top position-relative"
                   alt="blog"
                 />
@@ -667,20 +675,22 @@
 
               <div class="card-body">
                 <h2 class="h5 mb-2 card-title">
-                  <a href="#">THE UK GOVERNMENT</a>
+                  <a href="#">Top Commercial Bank</a>
                 </h2>
 
                 <h2 class="card-text-intro">
-                  Lorem ipsum dolor sit amet, consectetur
+                  Fraud & Money-Laundering Detection
                 </h2>
                 <p class="card-text">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Detecting fraud and money laundering by translating business
+                  rules into code. Our solution provides an end-to-end platform
+                  for detection and reporting for second-level investigation by
+                  by the Bank's investigation team.
                 </p>
                 <div class="tags">
                   <p class="list-inline-item"></p>
-                  <p>Data analytics,Citizen Registration,</p>
-                  <p>Registration,Mchine larning,Technology,</p>
+                  <p>Data Science, Fraud Detection,</p>
+                  <p>AML Detection, Data Visualization</p>
                 </div>
               </div>
             </div>
@@ -722,28 +732,28 @@
         <div class="col-full">
           <div class="clients">
             <a href="#0" title="" class="clients__slide"
-              ><img src="images/clients/apple.png"
+              ><img src="images/clients/thankyou.png"
             /></a>
             <a href="#0" title="" class="clients__slide"
-              ><img src="images/clients/atom.png"
+              ><img src="images/clients/thankyou.png"
             /></a>
             <a href="#0" title="" class="clients__slide"
-              ><img src="images/clients/blackberry.png"
+              ><img src="images/clients/thankyou.png"
             /></a>
             <a href="#0" title="" class="clients__slide"
-              ><img src="images/clients/dropbox.png"
+              ><img src="images/clients/thankyou.png"
             /></a>
             <a href="#0" title="" class="clients__slide"
-              ><img src="images/clients/envato.png"
+              ><img src="images/clients/thankyou.png"
             /></a>
             <a href="#0" title="" class="clients__slide"
-              ><img src="images/clients/firefox.png"
+              ><img src="images/clients/thankyou.png"
             /></a>
             <a href="#0" title="" class="clients__slide"
-              ><img src="images/clients/joomla.png"
+              ><img src="images/clients/thankyou.png"
             /></a>
             <a href="#0" title="" class="clients__slide"
-              ><img src="images/clients/magento.png"
+              ><img src="images/clients/thankyou.png"
             /></a>
           </div>
           <!-- end clients -->
@@ -761,25 +771,23 @@
           <div class="testimonials">
             <div class="testimonials__slide">
               <p>
-                Qui ipsam temporibus quisquam vel. Maiores eos cumque distinctio
-                nam accusantium ipsum. Laudantium quia consequatur molestias
-                delectus culpa facere hic dolores aperiam. Accusantium quos qui
-                praesentium corpori. Excepturi nam cupiditate culpa doloremque
-                deleniti repellat.
+                Fantastic company to work with. They perfectly understood our
+                need and provided tailor made solutions for us.
+                Exactly what we needed!
               </p>
 
               <img
-                src="images/avatars/user-01.jpg"
+                src="images/avatars/user-06.png"
                 alt="Author image"
                 class="testimonials__avatar"
               />
-              <div class="testimonials__info">
-                <span class="testimonials__name">Tim Cook</span>
-                <span class="testimonials__pos">CEO, Apple</span>
+            <div class="testimonials__info">
+                <span class="testimonials__name">Kunle Moshood</span>
+                <span class="testimonials__pos">CEO, Maakayo Tech</span>
               </div>
             </div>
 
-            <div class="testimonials__slide">
+            <!--<div class="testimonials__slide">
               <p>
                 Excepturi nam cupiditate culpa doloremque deleniti repellat.
                 Veniam quos repellat voluptas animi adipisci. Nisi eaque
@@ -840,6 +848,54 @@
       <!-- end section-header -->
 
       <div class="row services-list block-1-2 block-tab-full">
+         <div
+          class="col-block services-item"
+          data-aos="fade-up"
+          data-aos-duration="1500"
+        >
+          <div class="services-text">
+            <div class="single-blog-card card">
+              <span
+                class="category position-absolute badge badge-pill badge-primary"
+                >Customer relationship and item</span
+              >
+              <img
+                src="img/administrator.svg"
+                class="card-img-top position-relative"
+                alt="blog"
+                id="blogimg"
+                data-aos="zoom-in"
+                data-aos-duration="1500"
+              />
+              <div class="card-body">
+                <h3 class="h5 mb-2 card-title">
+                  <a href="https://medium.com/cantors-paradise/is-0-99999-really-equal-to-1-768bb812bd2e" target="_blank">Appropriately productize fully sample used</a>
+                </h3>
+                <div class="post-meta mb-2">
+                  <ul class="list-inline meta-list">
+                    <li class="list-inline-item">Jan 21, 2022</li>
+                    <li class="list-inline-item"><span>59</span> Comments</li>
+                    <li class="list-inline-item"><span>20</span> Share</li>
+                  </ul>
+                </div>
+                <p
+                  class="card-text"
+                  data-aos="fade-up"
+                  data-aos-duration="1500"
+                >
+                  The Atomicity of any model can be determined at will based on new research....
+                </p>
+                <a href="https://medium.com/cantors-paradise/is-0-99999-really-equal-to-1-768bb812bd2e" target="_blank" class="detail-link"
+                  ><i class="fa fa-arrow-right"> Read more</i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        
+        
+        
         <div
           class="col-block services-item"
           data-aos="fade-up"
@@ -1057,26 +1113,24 @@
             <div class="cinfo">
               <h5>Where to Find Us</h5>
               <p>
-                1600 Amphitheatre Parkway<br />
-                Mountain View, CA<br />
-                94043 US
+                3, Alafia Str, 7up road<br />
+                Oluyole Estate, Ibadan<br />
+                Oyo, Nigeria
               </p>
             </div>
 
             <div class="cinfo">
               <h5>Email Us At</h5>
               <p>
-                contact@glintsite.com<br />
-                info@glintsite.com
+                info@modanalytica.com<br />
               </p>
             </div>
 
             <div class="cinfo">
               <h5>Call Us At</h5>
               <p>
-                Phone: (+63) 555 1212<br />
-                Mobile: (+63) 555 0100<br />
-                Fax: (+63) 555 0101
+                Mobile1: +447943432630<br />
+                Mobile2: +447421366896<br />
               </p>
             </div>
 
@@ -1128,9 +1182,9 @@
         <div class="col-six tab-full right footer-subscribe">
           <h4>Get Notified</h4>
           <p>
-            Quia quo qui sed odit. Quaerat voluptas autem necessitatibus vitae
-            aut non alias sed quia. Ut itaque enim optio ut excepturi deserunt
-            iusto porro.
+            Get up-to-date information about our products, client services,
+            and company wide announcements. There is always something new
+            with Moda AI.
           </p>
 
           <div class="subscribe-form">
@@ -1259,9 +1313,7 @@
     ></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-      AOS.init({
-        offset: 120,
-      });
+      AOS.init();
     </script>
   </body>
 </html>
